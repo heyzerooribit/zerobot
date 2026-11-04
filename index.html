@@ -3,49 +3,125 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ZERObot – Discord bot</title>
-  <meta name="description" content="ZERObot is a Discord bot. Add it to your server, see what it can do, and read its Terms and Privacy Policy.">
-  <link rel="stylesheet" href="style.css">
+  <title>ZERObot – The all-in-one Discord bot</title>
+  <meta name="description" content="ZERObot is an all-in-one Discord bot designed to simplify server management, strengthen communities, and bring people together through useful tools and entertainment.">
+  <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <header>
-    <a class="brand" href="index.html">ZERObot</a>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-    </nav>
-  </header>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true"></span>ZERObot</a>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#community">Community</a>
+        <a href="[SUPPORT SERVER INVITE]">Support</a>
+        <a class="btn small" href="https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&permissions=[PERMISSIONS_INTEGER]&scope=bot%20applications.commands">Add to Discord</a>
+      </nav>
+    </div>
+  </div>
 
   <main>
-    <h1>ZERObot</h1>
-    <p class="lead">ZERObot is an all-in-one Discord bot designed to simplify server management, strengthen communities, and bring people together through useful tools and entertainment.</p>
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <h1>The all-in-one Discord bot for your server</h1>
+          <p class="lead">ZERObot is an all-in-one Discord bot designed to simplify server management, strengthen communities, and bring people together through useful tools and entertainment.</p>
+          <div class="actions">
+            <a class="btn" href="https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&permissions=[PERMISSIONS_INTEGER]&scope=bot%20applications.commands">Add to Discord</a>
+            <a class="btn ghost" href="[SUPPORT SERVER INVITE]">Join the support server</a>
+          </div>
+          <p class="note">Free to add. Takes less than a minute.</p>
+        </div>
 
-    <p class="actions">
-      <a class="button" href="https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&permissions=[PERMISSIONS_INTEGER]&scope=bot%20applications.commands">Add to Discord</a>
-      <a class="button secondary" href="[SUPPORT SERVER INVITE]">Join the support server</a>
-    </p>
-
-    <h2 id="features">What it does</h2>
-    <ul>
-      <li><strong>Server management:</strong> tools that make running your server simpler.</li>
-      <li><strong>Community building:</strong> features that help members connect and stay active.</li>
-      <li><strong>Entertainment:</strong> fun commands and activities for your members.</li>
-    </ul>
-
-    <h2>Getting started</h2>
-    <p>Click <strong>Add to Discord</strong>, choose your server, and approve the permissions. Then type <code>/help</code> in your server to see the available commands.</p>
-
-    <h2>Legal</h2>
-    <div class="links">
-      <a href="terms.html">Terms of Service<span>The rules for using ZERObot.</span></a>
-      <a href="privacy.html">Privacy Policy<span>What data ZERObot collects and how to have it deleted.</span></a>
+        <div class="chat" aria-label="Example of ZERObot in a Discord channel">
+          <div class="msg">
+            <div class="avatar">A</div>
+            <div>
+              <div class="who">Alex</div>
+              <p class="said"><code>/help</code></p>
+            </div>
+          </div>
+          <div class="msg">
+            <div class="avatar bot">Z</div>
+            <div>
+              <div class="who">ZERObot<span class="tag">BOT</span></div>
+              <div class="embed">
+                <strong>What can ZERObot do?</strong>
+                <ul>
+                  <li>Server management</li>
+                  <li>Community tools</li>
+                  <li>Games and fun</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <section id="features">
+      <div class="wrap">
+        <h2>Everything your server needs, in one bot</h2>
+        <p class="sub">Stop juggling a dozen bots. ZERObot covers the basics so you can focus on your community.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Server management</h3>
+            <p>[DESCRIBE: e.g. moderation, auto-roles, logging, welcome messages]</p>
+          </div>
+          <div class="card">
+            <h3>Community building</h3>
+            <p>[DESCRIBE: e.g. levels, rewards, events, polls]</p>
+          </div>
+          <div class="card">
+            <h3>Entertainment</h3>
+            <p>[DESCRIBE: e.g. games, memes, music, mini-activities]</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="community" class="alt">
+      <div class="wrap split">
+        <div>
+          <h2>Set it up once, then let it run</h2>
+          <p class="sub">Choose what you want ZERObot to do for your server and turn the rest off.</p>
+          <ul>
+            <li>Add the bot and approve permissions.</li>
+            <li>Turn on the features you want.</li>
+            <li>Type <code>/help</code> any time to see every command.</li>
+          </ul>
+        </div>
+        <div class="panel" aria-label="Example feature settings">
+          <div class="row"><span>Server management</span><span class="on">On</span></div>
+          <div class="row"><span>Community tools</span><span class="on">On</span></div>
+          <div class="row"><span>Entertainment</span><span class="on">On</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>Ready to try ZERObot?</h2>
+        <p>Add it to your server and see what it can do for your community.</p>
+        <a class="btn" href="https://discord.com/oauth2/authorize?client_id=[CLIENT_ID]&permissions=[PERMISSIONS_INTEGER]&scope=bot%20applications.commands">Add to Discord</a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    Questions? Email <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a><br>
-    ZERObot is not affiliated with or endorsed by Discord Inc.
+    <div class="wrap">
+      <div>
+        &copy; [YEAR] ZERObot. Not affiliated with or endorsed by Discord Inc.<br>
+        Contact: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>
+      </div>
+      <nav>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="[SUPPORT SERVER INVITE]">Support server</a>
+      </nav>
+    </div>
   </footer>
+
 </body>
 </html>
