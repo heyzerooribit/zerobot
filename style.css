@@ -80,3 +80,33 @@ footer {
   color: var(--muted);
   font-size: 0.9rem;
 }
+
+.lead { font-size: 1.2rem; color: var(--muted); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 28px 0 8px; }
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+}
+.button:hover { filter: brightness(1.1); }
+.button:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; }
+.button.secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--line);
+}
+.button.secondary:hover { border-color: var(--accent); filter: none; }
+
+code {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 1px 6px;
+  font-size: 0.9em;
+}
