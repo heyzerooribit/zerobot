@@ -46,7 +46,8 @@ header {
   border-bottom: 1px solid var(--line);
 }
 
-.brand { font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.1rem; color: var(--text); text-decoration: none; }
+.brand img { display: block; }
 
 nav a { color: var(--muted); text-decoration: none; margin-left: 18px; }
 nav a:hover, nav a[aria-current="page"] { color: var(--accent); }
