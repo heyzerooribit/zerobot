@@ -16,9 +16,10 @@
     <div class="wrap">
       <a class="logo" href="index.html"><img class="logo-mark" src="favicon.svg" alt="" width="30" height="30">ZERObot</a>
       <nav>
-        <a href="#features">Features</a>
-        <a href="#community">Community</a>
-        <a href="[SUPPORT SERVER INVITE]">Support</a>
+        <a href="index.html#features">Features</a>
+        <a href="commands.html">Commands</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
         <a class="btn small" href="invite.html">Add to Discord</a>
       </nav>
     </div>
@@ -32,7 +33,7 @@
           <p class="lead">ZERObot is an all-in-one Discord bot designed to simplify server management, strengthen communities, and bring people together through useful tools and entertainment.</p>
           <div class="actions">
             <a class="btn" href="invite.html">Add to Discord</a>
-            <a class="btn ghost" href="[SUPPORT SERVER INVITE]">Join the support server</a>
+            <a class="btn ghost" href="commands.html">See all commands</a>
           </div>
           <p class="note">Free to add. Takes less than a minute.</p>
         </div>
@@ -64,42 +65,71 @@
     </div>
 
     <section id="features">
-      <div class="wrap">
-        <h2>Everything your server needs, in one bot</h2>
-        <p class="sub">Stop juggling a dozen bots. ZERObot covers the basics so you can focus on your community.</p>
-        <div class="grid">
-          <div class="card">
-            <h3>Server management</h3>
-            <p>[DESCRIBE: e.g. moderation, auto-roles, logging, welcome messages]</p>
-          </div>
-          <div class="card">
-            <h3>Community building</h3>
-            <p>[DESCRIBE: e.g. levels, rewards, events, polls]</p>
-          </div>
-          <div class="card">
-            <h3>Entertainment</h3>
-            <p>[DESCRIBE: e.g. games, memes, music, mini-activities]</p>
-          </div>
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Server management</p>
+          <h2>Keep your server safe and tidy</h2>
+          <p class="sub">Moderation tools that respect your role setup, so mods can act fast without stepping on anyone above them.</p>
+          <ul class="feature-list">
+            <li>Kick, ban, and time out members with a reason.</li>
+            <li>Warn members and keep a warning history for your team.</li>
+            <li>Clear up to 100 messages at once with <code>/purge</code>.</li>
+            <li>Built-in checks stop mods from acting on higher roles.</li>
+          </ul>
+        </div>
+        <div class="panel" aria-label="Example moderation commands">
+          <div class="row"><span><code>/warn</code> @member reason</span><span class="on">Saved</span></div>
+          <div class="row"><span><code>/timeout</code> @member 30</span><span class="on">30 min</span></div>
+          <div class="row"><span><code>/purge</code> 25</span><span class="on">Done</span></div>
         </div>
       </div>
     </section>
 
-    <section id="community" class="alt">
-      <div class="wrap split">
+    <section class="alt">
+      <div class="wrap split reverse">
         <div>
-          <h2>Set it up once, then let it run</h2>
-          <p class="sub">Choose what you want ZERObot to do for your server and turn the rest off.</p>
-          <ul>
-            <li>Add the bot and approve permissions.</li>
-            <li>Turn on the features you want.</li>
-            <li>Type <code>/help</code> any time to see every command.</li>
+          <p class="eyebrow">Community</p>
+          <h2>Make your members feel at home</h2>
+          <p class="sub">Welcome people, reward activity, and get everyone talking.</p>
+          <ul class="feature-list">
+            <li>Levels and XP with a server leaderboard.</li>
+            <li>Custom welcome messages and an automatic role for new members.</li>
+            <li>Quick reaction polls with up to four options.</li>
           </ul>
         </div>
-        <div class="panel" aria-label="Example feature settings">
-          <div class="row"><span>Server management</span><span class="on">On</span></div>
-          <div class="row"><span>Community tools</span><span class="on">On</span></div>
-          <div class="row"><span>Entertainment</span><span class="on">On</span></div>
+        <div class="panel" aria-label="Example leaderboard">
+          <div class="row"><span>1. Member one</span><span class="on">Level 12</span></div>
+          <div class="row"><span>2. Member two</span><span class="on">Level 9</span></div>
+          <div class="row"><span>3. Member three</span><span class="on">Level 7</span></div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap split">
+        <div>
+          <p class="eyebrow">Entertainment</p>
+          <h2>A little fun between the serious stuff</h2>
+          <p class="sub">Quick commands that give your channels something to do.</p>
+          <ul class="feature-list">
+            <li>Ask the magic 8-ball a question.</li>
+            <li>Flip a coin or roll any die.</li>
+            <li>Can't decide? Let ZERObot choose for you.</li>
+          </ul>
+          <div class="chips"><span class="chip">/8ball</span><span class="chip">/coinflip</span><span class="chip">/roll</span><span class="chip">/choose</span></div>
+        </div>
+        <div class="panel" aria-label="Example fun command">
+          <div class="row"><span><code>/8ball</code> Will we hit 100 members?</span></div>
+          <div class="row"><span class="on">Signs point to yes.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="alt">
+      <div class="wrap">
+        <h2>Set it up once, then let it run</h2>
+        <p class="sub">Add the bot, approve the permissions, and type <code>/help</code> to see everything it can do. Only turn on the features you want.</p>
+        <p><a class="btn ghost" href="faq.html">Read the FAQ</a></p>
       </div>
     </section>
 
@@ -111,7 +141,6 @@
       </div>
     </section>
   </main>
-
   <footer>
     <div class="wrap">
       <div>
@@ -119,9 +148,11 @@
         Contact: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>
       </div>
       <nav>
+        <a href="commands.html">Commands</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
         <a href="terms.html">Terms of Service</a>
         <a href="privacy.html">Privacy Policy</a>
-        <a href="[SUPPORT SERVER INVITE]">Support server</a>
       </nav>
     </div>
   </footer>

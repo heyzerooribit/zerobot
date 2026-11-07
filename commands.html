@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Commands – ZERObot</title>
+  <meta name="description" content="Every ZERObot slash command, grouped by category.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a class="logo" href="index.html"><img class="logo-mark" src="favicon.svg" alt="" width="30" height="30">ZERObot</a>
+      <nav>
+        <a href="index.html#features">Features</a>
+        <a href="commands.html" aria-current="page">Commands</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a class="btn small" href="invite.html">Add to Discord</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div class="page-head"><div class="wrap">
+      <h1>Commands</h1>
+      <p>ZERObot uses slash commands. Type <code>/</code> in any channel of your server to see them, then pick one from the list.</p>
+    </div></div>
+    <div class="page-body"><div class="wrap">
+      <h2>Server management</h2>
+      <p class="sub">Moderation tools. Discord hides these from members who don't have the permission. ZERObot also refuses to act on anyone whose top role is equal to or above yours or its own.</p>
+<div class="table-wrap">
+<table class="cmds">
+<tr><th>Command</th><th>What it does</th><th>Who can use it</th></tr>
+<tr><td><code>/kick member [reason]</code></td><td>Remove a member from the server. They can rejoin with an invite.</td><td>Kick Members</td></tr>
+<tr><td><code>/ban member [reason]</code></td><td>Ban a member from the server.</td><td>Ban Members</td></tr>
+<tr><td><code>/timeout member minutes [reason]</code></td><td>Temporarily mute a member for up to 28 days.</td><td>Moderate Members</td></tr>
+<tr><td><code>/warn member reason</code></td><td>Warn a member. ZERObot saves it and tries to DM them.</td><td>Moderate Members</td></tr>
+<tr><td><code>/warnings member</code></td><td>See a member's warning history.</td><td>Moderate Members</td></tr>
+<tr><td><code>/clearwarnings member</code></td><td>Remove all of a member's warnings.</td><td>Moderate Members</td></tr>
+<tr><td><code>/purge amount</code></td><td>Delete 1 to 100 recent messages in the current channel.</td><td>Manage Messages</td></tr>
+</table>
+</div>
+
+      <h2>Community</h2>
+      <p class="sub">Members earn XP for chatting (at most once per minute) and level up over time. ZERObot counts messages but never stores what they say.</p>
+<div class="table-wrap">
+<table class="cmds">
+<tr><th>Command</th><th>What it does</th><th>Who can use it</th></tr>
+<tr><td><code>/rank [member]</code></td><td>Show your level, XP, and server rank (or someone else's).</td><td>Everyone</td></tr>
+<tr><td><code>/leaderboard</code></td><td>Show the top 10 members by XP.</td><td>Everyone</td></tr>
+<tr><td><code>/poll question option1 option2 [option3] [option4]</code></td><td>Start a poll that members vote on with reactions.</td><td>Everyone</td></tr>
+<tr><td><code>/setwelcome channel [message]</code></td><td>Send a welcome message in a channel when someone joins. Use {user} and {server} in the message.</td><td>Manage Server</td></tr>
+<tr><td><code>/welcome_off</code></td><td>Turn off welcome messages.</td><td>Manage Server</td></tr>
+<tr><td><code>/setautorole role</code></td><td>Give new members a role automatically.</td><td>Manage Roles</td></tr>
+</table>
+</div>
+
+      <h2>Entertainment</h2>
+<div class="table-wrap">
+<table class="cmds">
+<tr><th>Command</th><th>What it does</th><th>Who can use it</th></tr>
+<tr><td><code>/8ball question</code></td><td>Ask the magic 8-ball.</td><td>Everyone</td></tr>
+<tr><td><code>/coinflip</code></td><td>Flip a coin.</td><td>Everyone</td></tr>
+<tr><td><code>/roll [sides]</code></td><td>Roll a die (default 6 sides).</td><td>Everyone</td></tr>
+<tr><td><code>/choose options</code></td><td>Pick one option for you. Separate choices with commas.</td><td>Everyone</td></tr>
+</table>
+</div>
+
+      <h2>Info</h2>
+<div class="table-wrap">
+<table class="cmds">
+<tr><th>Command</th><th>What it does</th><th>Who can use it</th></tr>
+<tr><td><code>/help</code></td><td>Show the command list inside Discord.</td><td>Everyone</td></tr>
+<tr><td><code>/about</code></td><td>Show info about ZERObot and links to this site.</td><td>Everyone</td></tr>
+<tr><td><code>/ping</code></td><td>Check that ZERObot is online and see its response time.</td><td>Everyone</td></tr>
+</table>
+</div>
+
+      <p class="sub" style="margin-top: 28px;">Missing a command? New ones arrive in updates. Ask in the <a href="[SUPPORT SERVER INVITE]">support server</a>.</p>
+    </div></div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div>
+        &copy; [YEAR] ZERObot. Not affiliated with or endorsed by Discord Inc.<br>
+        Contact: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>
+      </div>
+      <nav>
+        <a href="commands.html">Commands</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>

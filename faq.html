@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FAQ – ZERObot</title>
+  <meta name="description" content="Answers to common questions about ZERObot.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="wrap">
+      <a class="logo" href="index.html"><img class="logo-mark" src="favicon.svg" alt="" width="30" height="30">ZERObot</a>
+      <nav>
+        <a href="index.html#features">Features</a>
+        <a href="commands.html">Commands</a>
+        <a href="faq.html" aria-current="page">FAQ</a>
+        <a href="support.html">Support</a>
+        <a class="btn small" href="invite.html">Add to Discord</a>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div class="page-head"><div class="wrap">
+      <h1>Frequently asked questions</h1>
+      <p>Quick answers about adding, using, and troubleshooting ZERObot.</p>
+    </div></div>
+    <div class="page-body"><div class="wrap">
+      <details class="faq"><summary>What is ZERObot?</summary><p>ZERObot is an all-in-one Discord bot for server management, community building, and entertainment.</p></details>
+      <details class="faq"><summary>How do I add ZERObot to my server?</summary><p>Click <a href="invite.html">Add to Discord</a>, choose your server, and approve the permissions. You need the Manage Server permission on that server.</p></details>
+      <details class="faq"><summary>Is ZERObot free?</summary><p>Yes. ZERObot is free to add and use.</p></details>
+      <details class="faq"><summary>The slash commands aren't showing up. What do I do?</summary><ul><li>Type <code>/</code> and wait a few seconds for the list to load.</li><li>Make sure ZERObot is in your server's member list and shows as online.</li><li>Check that the bot can see the channel and that Discord's "Use Application Commands" permission is allowed for you there.</li><li>If it still doesn't work, remove the bot and add it again using the Add to Discord button, then ask in the support server.</li></ul></details>
+      <details class="faq"><summary>Why do I get "I'm missing permissions" or "my role isn't high enough"?</summary><p>Discord only lets a bot act on members and roles below its own highest role. Open <strong>Server Settings &rarr; Roles</strong> and drag the ZERObot role above the roles it should manage. Also check that the role has the permission that command needs (see the <a href="commands.html">Commands</a> page).</p></details>
+      <details class="faq"><summary>How does leveling work?</summary><p>Members earn a small amount of XP when they send a message, at most once per minute. Spamming doesn't help. Use <code>/rank</code> to see your level and <code>/leaderboard</code> to see the top members.</p></details>
+      <details class="faq"><summary>How do I set up welcome messages and auto-roles?</summary><p>Use <code>/setwelcome</code> to choose a channel and message (put <code>{user}</code> and <code>{server}</code> in it), and <code>/setautorole</code> to pick a role new members receive. Turn welcome messages off any time with <code>/welcome_off</code>.</p></details>
+      <details class="faq"><summary>What data does ZERObot store?</summary><p>Discord user IDs, server IDs, XP, warnings, and your server settings. ZERObot does not store the text of messages. Details are in the <a href="privacy.html">Privacy Policy</a>.</p></details>
+      <details class="faq"><summary>How do I delete my data?</summary><p>Email <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a> with your Discord user ID (and server ID if it's about a server). Server admins can also remove the bot, which deletes that server's data.</p></details>
+      <details class="faq"><summary>ZERObot is offline. What happened?</summary><p>It may be restarting or being updated. Give it a few minutes, then check the <a href="[SUPPORT SERVER INVITE]">support server</a> for announcements.</p></details>
+      <details class="faq"><summary>How do I report a bug or suggest a feature?</summary><p>Join the <a href="[SUPPORT SERVER INVITE]">support server</a> or use the <a href="support.html">Support page</a>.</p></details>
+    </div></div>
+  </main>
+  <footer>
+    <div class="wrap">
+      <div>
+        &copy; [YEAR] ZERObot. Not affiliated with or endorsed by Discord Inc.<br>
+        Contact: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>
+      </div>
+      <nav>
+        <a href="commands.html">Commands</a>
+        <a href="faq.html">FAQ</a>
+        <a href="support.html">Support</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </div>
+  </footer>
+
+</body>
+</html>
